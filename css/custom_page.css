@@ -1,0 +1,295 @@
+.hidden {
+	display: none;
+}
+
+.mobileappbanner {
+	overflow-x: hidden;
+	width: 100%;
+	height: 84px;
+	font-family: "Manrope", sans, sans-serif;
+	background: rgba(255, 255, 255, 0.95);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mobileappbanner_exit {
+	position: relative;
+	top: calc(50% - 6px);
+	left: 9px;
+	display: block;
+	margin: 0;
+	width: 12px;
+	height: 12px;
+	border: 0;
+	text-align: center;
+}
+
+.mobileappbanner_exit::before,
+.mobileappbanner_exit::after {
+	position: absolute;
+	width: 1px;
+	height: 12px;
+	background: #767676;
+	content: " ";
+}
+
+.mobileappbanner_exit::before {
+	transform: rotate(45deg);
+}
+
+.mobileappbanner_exit::after {
+	transform: rotate(-45deg);
+}
+
+.mobileappbanner_icon {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	width: 64px;
+	height: 64px;
+	border-radius: 15px;
+	background-size: 64px 64px;
+}
+
+.mobileappbanner_info {
+	position: absolute;
+	top: 10px;
+	left: 104px;
+	display: flex;
+	overflow-y: hidden;
+	width: 60%;
+	height: 64px;
+	align-items: center;
+	color: #000;
+}
+
+.mobileappbanner_info_title {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.mobileappbanner_info_author,
+.mobileappbanner_info_price {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.mobileappbanner_button {
+	position: absolute;
+	top: 32px;
+	right: 10px;
+	z-index: 1;
+	display: block;
+	padding: 0 12px;
+	min-width: 10%;
+	border-radius: 20px;
+	background: #00c386;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.mobileappbanner_button_label {
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.mobileappbanner {
+		display: none;
+	}
+}
+
+.media-text {
+	display: block;
+	width: 90%;
+	font-size: 16px;
+	line-height: 25px;
+}
+.cookie-banner {
+	max-width: 250px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: "Manrope", sans, sans-serif;
+    padding: 1rem;
+	font-weight: 400;
+	background-color: #209cee;
+    color: #fff;
+	border-radius: 4px;
+	z-index: 100;
+}
+
+.media-text a {
+	text-decoration: underline;
+}
+.cookie-banner > .delete {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background-color: rgba(10, 10, 10, 0.2);
+    border: none;
+    border-radius: 290486px;
+    cursor: pointer;
+    pointer-events: auto;
+    display: inline-block;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: 0;
+    height: 20px;
+    max-height: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    min-width: 20px;
+    outline: none;
+    vertical-align: top;
+    width: 20px;
+}
+.delete::before, .modal-close::before {
+    height: 2px;
+    width: 50%;
+}
+
+.delete::before, .modal-close::before, .delete::after, .modal-close::after {
+    background-color: white;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+.delete::after, .modal-close::after {
+    height: 50%;
+    width: 2px;
+}
+.delete:hover, .modal-close:hover, .delete:focus, .modal-close:focus {
+    background-color: rgba(10, 10, 10, 0.3);
+}
+.cookie-button {
+    background-color: white;
+    border-color: transparent;
+    color: #0a0a0a;
+    background-color: white;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: #363636;
+    cursor: pointer;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+	border-radius: 4px;
+	height: 2.25em;
+	font-size: 1rem;
+}
+.media-content {
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    text-align: left;
+}
+
+/* My CSS */
+body{
+	background: #121212;
+}
+.bg-whitish {
+    background: rgb(255 255 255 / 6%) !important;
+    border: 1px solid rgb(255 255 255 / 10%) !important;
+}
+.faq,
+.disclaimer-2 {
+border: 1px solid rgb(255 255 255 / 10%) !important;
+}
+.faq-circle{
+	background: rgb(255 255 255 / 10%) !important;
+}
+p.l-subtitle,
+.disclaimer-title {
+    color: #fff;
+}
+
+.l-subtitle{
+font-weight: 100;
+}
+
+.b-para{
+    opacity: 1;
+    color: #fff;
+    padding: 0 130px;
+    font-size: 18px;
+}
+
+body p,
+p.m-paragraph,
+li.footer-list-item a,
+.footer-bottom-block div {
+    color: rgb(255 255 255 / 70%);
+}
+a.primary-button {
+    background: #42FFFC;
+    color: #000 !important;
+}
+.nav-btn strong{
+	color: #000 !important;
+}
+a.primary-button img {
+    filter: brightness(0);
+}
+.disclaimer-circle img,
+.faq-circle img,
+.centered-and-vertical img,
+.mobile-centered img,
+.footer-social-wrapper a img,
+.s-badge-grid img{
+    filter: invert(1);
+}
+footer.footer-wrapper,
+.faq,
+.disclaimer-2{
+    background: rgb(255 255 255 / 3%) !important;
+}
+.line-2 {
+    background: rgb(255 255 255 / 6%) !important;
+}
+body h1,
+body h2,
+body h3,
+.m-paragraph,
+body p a,
+body strong,
+.faq-h4,
+p.s-subtitle{
+	color: #fff !important;
+    
+}
+
+.m-paragraph{
+    opacity: 0.7;
+}
+
+.footer-legal-block a{
+	color: #fff !important;
+} 
+.navbar-component img {
+    filter: invert(1);
+}
+/* My CSS End*/
